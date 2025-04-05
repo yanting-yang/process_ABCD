@@ -11,7 +11,9 @@ for file in $files; do
     base_name="${file##*/}"
     base_name="${base_name%.tgz}"
     npy_file="$OUTPUT_DIR/${base_name}.npy"
-    if [ ! -f "$npy_file" ]; then
+    if [ -f "$npy_file" ]; then
+        echo "File $npy_file already exists, skipping."
+    else
         array+=("$index")
         echo "File $file does not exist, adding to array index $index"
     fi
