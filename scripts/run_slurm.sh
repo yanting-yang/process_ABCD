@@ -15,7 +15,7 @@ for file in $files; do
         echo "File $npy_file already exists, skipping."
     else
         array+=("$index")
-        echo "File $file does not exist, adding to array index $index"
+        echo "File $npy_file does not exist, adding to array index $index."
     fi
     ((index++))
 done
