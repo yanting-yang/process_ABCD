@@ -1,7 +1,7 @@
 #!/bin/bash
 
-INPUT_DIR="~/datasets/ABCD"
-OUTPUT_DIR="~/datasets/ABCD_DiFuMo1024"
+INPUT_DIR=~/datasets/ABCD
+OUTPUT_DIR=~/datasets/ABCD_DiFuMo1024
 
 # Initialize an index counter
 index=0
