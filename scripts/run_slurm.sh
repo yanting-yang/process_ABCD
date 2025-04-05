@@ -28,6 +28,6 @@ done
 
 array=${array%,}
 
-# sbatch \
-#     --array=$array \
-#     ./scripts/slurm.sh
+sbatch \
+    --array=$array \
+    ./scripts/slurm.sh
