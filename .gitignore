@@ -1,2 +1,6 @@
+*.npy
+*.out
+*.simg
 *.tgz
+dataset_description.json
 sub-*/
