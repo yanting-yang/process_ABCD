@@ -8,8 +8,8 @@
 
 module load apptainer/1.3.5
 
-INPUT_DIR=~/datasets/ABCD
-OUTPUT_DIR=~/datasets/ABCD_DiFuMo1024
+INPUT_DIR="$HOME/datasets/ABCD"
+OUTPUT_DIR="$HOME/datasets/ABCD_DiFuMo1024"
 
 FILE_LIST=($(find "$INPUT_DIR" -type f -name "*.tgz"))
 FILE_TO_PROCESS=${FILE_LIST[$SLURM_ARRAY_TASK_ID]}

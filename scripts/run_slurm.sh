@@ -1,7 +1,7 @@
 #!/bin/bash
 
-INPUT_DIR=~/datasets/ABCD
-OUTPUT_DIR=~/datasets/ABCD_DiFuMo1024
+INPUT_DIR="$HOME/datasets/ABCD"
+OUTPUT_DIR="$HOME/datasets/ABCD_DiFuMo1024"
 
 # Initialize an index counter
 index=0
@@ -28,6 +28,6 @@ done
 
 array=${array%,}
 
-sbatch \
-    --array=$array \
-    ./scripts/slurm.sh
+# sbatch \
+#     --array=$array \
+#     ./scripts/slurm.sh
