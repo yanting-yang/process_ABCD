@@ -12,7 +12,7 @@ INPUT_DIR="$HOME/datasets/ABCD"
 OUTPUT_DIR="$HOME/datasets/ABCD_DiFuMo1024"
 
 FILE_LIST=($(find "$INPUT_DIR" -type f -name "*.tgz"))
-FILE_TO_PROCESS=${FILE_LIST[$SLURM_ARRAY_TASK_ID]}
+FILE_TO_PROCESS=${FILE_LIST[((SLURM_ARRAY_TASK_ID-1))]}
 echo $FILE_TO_PROCESS
 apptainer run --cleanenv process_abcd.simg \
     python main.py \
